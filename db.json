@@ -1,8 +1,78 @@
 {
-    "banner": [
-      { "id": 1, "title": "Banner11", "image": "test" }
-    ],
-    "carousel": [
-      { "id": 1, "text": "some comment", "image": "test" }
-    ]
-  }
+  "banner": [
+    {
+      "id": 1,
+      "title": "Banner1",
+      "image": "test"
+    },
+    {
+      "id": 2,
+      "title": "Banner2",
+      "image": "test"
+    },
+    {
+      "id": 3,
+      "title": "Banner3",
+      "image": "test"
+    }
+  ],
+  "carousel": [
+    {
+      "id": 1,
+      "text": "Link",
+      "image": "./assets/img/ciclista.jpg"
+    },
+    {
+      "id": 2,
+      "text": "Link",
+      "image": "./assets/img/ciclista.jpg"
+    },
+    {
+      "id": 3,
+      "text": "Link",
+      "image": "./assets/img/ciclista.jpg"
+    },
+    {
+      "id": 4,
+      "text": "Link",
+      "image": "./assets/img/ciclista.jpg"
+    },
+    {
+      "id": 5,
+      "text": "Link",
+      "image": "./assets/img/ciclista.jpg"
+    },
+    {
+      "id": 6,
+      "text": "Link",
+      "image": "./assets/img/ciclista.jpg"
+    },
+    {
+      "id": 7,
+      "text": "Link",
+      "image": "./assets/img/ciclista.jpg"
+    },
+    {
+      "id": 8,
+      "text": "Link",
+      "image": "./assets/img/ciclista.jpg"
+    },
+    {
+      "id": 9,
+      "text": "Link",
+      "image": "./assets/img/ciclista.jpg"
+    },
+    {
+      "id": 10,
+      "text": "Link",
+      "image": "./assets/img/ciclista.jpg"
+    }
+  ],
+  "basket": [
+    {
+      "type": "Product",
+      "title": "Ldl Product",
+      "id": 1
+    }
+  ]
+}

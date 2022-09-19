@@ -20,9 +20,23 @@ body{
     }
     &__cart{
         align-self: center;
+        position: relative;
         img{
             width:45px;
             height:auto
+        }
+        .header__cart-products-quantity{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            width:25px;
+            height:25px;
+            border-radius: 50%;
+            background:#0050AA;
+            color: white;
+            border: 2px solid white;
+            position: absolute;
+            right:-5px
         }
     }
 }
@@ -46,7 +60,7 @@ main{
             width: 60%;
             object-fit: cover;
             position: relative;
-            .banner_zone-btn{
+            .banner__zone-btn{
                 background-color: #E60814;
                 color: white;
                 text-transform: uppercase;

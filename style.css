@@ -32,11 +32,32 @@ body {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  position: relative;
 }
 
 .header__cart img {
   width: 45px;
   height: auto;
+}
+
+.header__cart .header__cart-products-quantity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #0050AA;
+  color: white;
+  border: 2px solid white;
+  position: absolute;
+  right: -5px;
 }
 
 main {
@@ -68,7 +89,7 @@ main .banner .banner__zone--left {
   position: relative;
 }
 
-main .banner .banner__zone--left .banner_zone-btn {
+main .banner .banner__zone--left .banner__zone-btn {
   background-color: #E60814;
   color: white;
   text-transform: uppercase;
@@ -86,7 +107,7 @@ main .banner .banner__zone--left .banner_zone-btn {
   transition: background 0.5s ease-in-out;
 }
 
-main .banner .banner__zone--left .banner_zone-btn:hover {
+main .banner .banner__zone--left .banner__zone-btn:hover {
   background-color: #0050AA;
 }
 
