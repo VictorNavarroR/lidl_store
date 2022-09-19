@@ -1,0 +1,126 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.header{
+    max-width: 90%;
+    margin:5px auto;
+    display: flex;
+    justify-content: space-between;
+    &__logo{
+        width:124px;
+        height:124px;
+        img{
+            width:100%;
+            height: auto
+        }
+    }
+    &__cart{
+        align-self: center;
+        img{
+            width:45px;
+            height:auto
+        }
+    }
+}
+main{
+    max-width: 90%;
+    margin:0 auto;
+    .banner{
+        display: flex;
+        height: 778px;
+        overflow: hidden;
+        gap: 15px;
+        margin-bottom: 15px;
+        &__zone{
+            img{
+                width:100%;
+                height:100%;
+                object-fit: cover;
+            }
+        }
+        .banner__zone--left{
+            width: 60%;
+            object-fit: cover;
+            position: relative;
+            .banner_zone-btn{
+                background-color: #E60814;
+                color: white;
+                text-transform: uppercase;
+                text-align: center;
+                font-weight: bold;
+                font-size: 23px;
+                padding: 20px 15px;
+                position: absolute;
+                top:20px;
+                left:20px;
+                box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+                cursor: pointer;
+                transition: background 0.5s ease-in-out;
+                &:hover{
+                    background-color: #0050AA
+                }
+            }
+        }
+        .banner__zone--right{
+            width: 40%;
+        }
+    }
+    .carousel-wrapper{
+        width: 100%;
+        position: relative;
+        .carousel{
+            width: 100%;
+            overflow: hidden;
+            &__cards{
+            width:calc(314px * 10);
+            height: 310px;
+            display: inline-flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            }
+            &__card{
+                display:block;
+                width: 314px;
+            }
+            &__cardimg{
+                width: 100%;
+                height: 233px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            &__cardtext{
+                color:rgb(51, 51, 51);
+                font-weight: bold;
+                font-size:23px;
+                padding: 25px 10px;
+                background-color: #F1F2F3;
+            }
+            .carousel__scrollbtn{
+                display:flex;
+                width: 70px;
+                height: 303px;
+                align-items: center;
+                justify-content: center;
+                background-color: white;
+                position: absolute;
+                top:0;
+                right:0;
+                z-index: 1000;
+                cursor: pointer;
+                box-shadow: -5px -5px 5px rgba(0, 0, 0, 0.3);
+                border: 1px solid rgba(0, 0, 0, 0.1);
+                img{
+                    width: 50px;
+                    height: 50px;
+                }
+            }   
+        }
+    }
+}
