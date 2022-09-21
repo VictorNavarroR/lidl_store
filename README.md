@@ -2,7 +2,7 @@
 A basic web app created with javascript, nodejs, json-sever, HTML5 and CSS.
 
 ## Instructions
-1- Run npm intall
+1- Run npm install
 
 2- Run npm run dev
 
