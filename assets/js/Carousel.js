@@ -22,12 +22,23 @@ export const initCarousel = async (carousel) => {
         })
     }
 }
-
-export const carouselNext = (carousel, moveDistance = 100) => {
-    carousel.scrollTo({
+const scrolls = [];
+export const carouselNext = async (carousel, moveDistance = 100) => {
+    const scrollBtn = document.querySelector('.carousel__scrollbtn'); 
+    carousel.scrollBy({
         left: moveDistance,
         behavior: 'smooth'
     })
+    if(scrolls.includes(carousel.scrollLeft)) {
+        carousel.scrollBy({
+            left: -carousel.scrollLeft,
+            behavior: 'smooth'
+        })
+        scrolls.length = 0;
+    } else {
+        scrolls.push(carousel.scrollLeft)
+
+    }
 }
 
 

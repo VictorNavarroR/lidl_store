@@ -40,15 +40,57 @@ body{
         }
     }
 }
+
 main{
     max-width: 90%;
     margin:0 auto;
+    .accordion-wrapper{
+        .panel{
+            position: relative;
+            overflow: hidden;
+            .slide{
+                display: flex;
+                overflow: hidden;
+                gap: 15px;
+                height: 478px;
+                position: relative;
+                top:0;
+                left:0;
+                z-index: 0;
+                .banner__zone--left{
+                    width: 60%;
+                    object-fit: cover;
+                    position: relative;
+                    .banner__zone-btn{
+                        background-color: #E60814;
+                        color: white;
+                        text-transform: uppercase;
+                        text-align: center;
+                        font-weight: bold;
+                        font-size: 23px;
+                        padding: 20px 15px;
+                        position: absolute;
+                        top:20px;
+                        left:20px;
+                        box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+                        cursor: pointer;
+                        transition: background 0.5s ease-in-out;
+                        border: none;
+                        &:hover{
+                            background-color: #0050AA
+                        }
+                    }
+                }
+                .banner__zone--right{
+                    width: 40%;
+                }
+            }
+       
+        }
+    }
+
     .banner{
-        display: flex;
-        height: 778px;
-        overflow: hidden;
-        gap: 15px;
-        margin-bottom: 15px;
+        position: relative;
         &__zone{
             img{
                 width:100%;
@@ -56,36 +98,86 @@ main{
                 object-fit: cover;
             }
         }
-        .banner__zone--left{
-            width: 60%;
-            object-fit: cover;
+        .banner__slider{
             position: relative;
-            .banner__zone-btn{
-                background-color: #E60814;
-                color: white;
-                text-transform: uppercase;
-                text-align: center;
-                font-weight: bold;
-                font-size: 23px;
-                padding: 20px 15px;
-                position: absolute;
-                top:20px;
-                left:20px;
-                box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            .slide{
+                display: flex;
+                overflow: hidden;
+                gap: 15px;
+                height: 778px;
+                position: relative;
+                top:0;
+                left:0;
+                z-index: 0;
+                .banner__zone--left{
+                    width: 60%;
+                    object-fit: cover;
+                    position: relative;
+                    .banner__zone-btn{
+                        background-color: #E60814;
+                        color: white;
+                        text-transform: uppercase;
+                        text-align: center;
+                        font-weight: bold;
+                        font-size: 23px;
+                        padding: 20px 15px;
+                        position: absolute;
+                        top:20px;
+                        left:20px;
+                        box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+                        cursor: pointer;
+                        transition: background 0.5s ease-in-out;
+                        border: none;
+                        &:hover{
+                            background-color: #0050AA
+                        }
+                    }
+                }
+                .banner__zone--right{
+                    width: 40%;
+                }
+            }
+            .slideVisible{
+                display: flex;
+            }
+            .slideHidden{
+                display: none;
+            }
+        }
+        
+        .banner__tabs{
+            display: flex;
+            gap: 15px;
+            position: absolute;
+            left: 15px;
+            bottom: 0;
+            .banner__tab{
+                width: 75x;
+                height: 45px;
+                background-color:#E3E4E5;
+                border-radius: 5px 5px 0 0;
+                padding: 15px 25px 0 25px;
+                z-index: 1;
+                font-size: 25px;
+                font-weight: 400;
+                box-shadow: 0 -5px 8px rgba(0, 0, 0, 0.3);
                 cursor: pointer;
-                transition: background 0.5s ease-in-out;
                 &:hover{
-                    background-color: #0050AA
+                    background-color: white
                 }
             }
         }
-        .banner__zone--right{
-            width: 40%;
+    }
+    @media screen and (max-width: 992px){
+        .banner{
+            display:none
         }
     }
     .carousel-wrapper{
         width: 100%;
         position: relative;
+        margin-top: 15px;
         .carousel{
             width: 100%;
             overflow: hidden;
@@ -119,7 +211,7 @@ main{
             .carousel__scrollbtn{
                 display:flex;
                 width: 70px;
-                height: 303px;
+                height: 308px;
                 align-items: center;
                 justify-content: center;
                 background-color: white;
@@ -128,7 +220,7 @@ main{
                 right:0;
                 z-index: 1000;
                 cursor: pointer;
-                box-shadow: -5px -5px 5px rgba(0, 0, 0, 0.3);
+                box-shadow: -2px 0 8px rgba(0, 0, 0, 0.3);
                 border: 1px solid rgba(0, 0, 0, 0.1);
                 img{
                     width: 50px;
@@ -137,4 +229,41 @@ main{
             }   
         }
     }
+
+    .accordion-wrapper{
+        display:none;
+        .accordion {
+            background-color: #eee;
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            transition: 0.4s;
+            border-bottom: 1px solid rgb(192, 192, 192);
+        } 
+        
+        .active, .accordion:hover {
+            background-color: #ccc; 
+        }
+        
+        .panel {
+            display: none;
+            background-color: white;
+            overflow: hidden;
+        }
+    }
+    @media screen and (max-width: 992px){
+        .accordion-wrapper{
+            display:block
+        }
+    }
+}
+.fade-in { animation: fadeIn 1s; }
+@keyframes fadeIn {
+    0% { opacity: .5; }
+    100% { opacity: 1; }
 }

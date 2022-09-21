@@ -1,7 +1,7 @@
 const config = {
     apiUrl: 'http://localhost:3000',
     endPoints: {
-        banner: '/banner',
+        slider: '/slider',
         carousel:'/carousel',
         basket:'/basket'
     }

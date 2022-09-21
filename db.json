@@ -1,78 +1,116 @@
 {
-  "banner": [
-    {
-      "id": 1,
-      "title": "Banner1",
-      "image": "test"
-    },
-    {
-      "id": 2,
-      "title": "Banner2",
-      "image": "test"
-    },
-    {
-      "id": 3,
-      "title": "Banner3",
-      "image": "test"
-    }
-  ],
   "carousel": [
     {
       "id": 1,
       "text": "Link",
-      "image": "./assets/img/ciclista.jpg"
+      "image": "/img/ciclista.jpg"
     },
     {
       "id": 2,
       "text": "Link",
-      "image": "./assets/img/ciclista.jpg"
+      "image": "/img/ciclista.jpg"
     },
     {
       "id": 3,
       "text": "Link",
-      "image": "./assets/img/ciclista.jpg"
+      "image": "/img/ciclista.jpg"
     },
     {
       "id": 4,
       "text": "Link",
-      "image": "./assets/img/ciclista.jpg"
+      "image": "/img/ciclista.jpg"
     },
     {
       "id": 5,
       "text": "Link",
-      "image": "./assets/img/ciclista.jpg"
+      "image": "/img/ciclista.jpg"
     },
     {
       "id": 6,
       "text": "Link",
-      "image": "./assets/img/ciclista.jpg"
+      "image": "/img/ciclista.jpg"
     },
     {
       "id": 7,
       "text": "Link",
-      "image": "./assets/img/ciclista.jpg"
+      "image": "/img/ciclista.jpg"
     },
     {
       "id": 8,
       "text": "Link",
-      "image": "./assets/img/ciclista.jpg"
+      "image": "/img/ciclista.jpg"
     },
     {
       "id": 9,
       "text": "Link",
-      "image": "./assets/img/ciclista.jpg"
+      "image": "/img/ciclista.jpg"
     },
     {
       "id": 10,
       "text": "Link",
-      "image": "./assets/img/ciclista.jpg"
+      "image": "/img/ciclista.jpg"
+    },
+    {
+      "id": 11,
+      "text": "Link",
+      "image": "/img/ciclista.jpg"
+    },
+    {
+      "id": 12,
+      "text": "Link",
+      "image": "/img/ciclista.jpg"
+    }
+  ],
+  "slider": [
+    {
+      "text": "Tab1",
+      "image": "/img/slide1.jpg",
+      "secondaryImage": "/img/slide4.jpg",
+      "id": 1
+    },
+    {
+      "text": "Tab2",
+      "image": "/img/slide2.jpg",
+      "secondaryImage": "/img/slide3.jpg",
+      "id": 2
+    },
+    {
+      "text": "Tab3",
+      "image": "/img/slide3.jpg",
+      "secondaryImage": "/img/slide2.jpg",
+      "id": 3
+    },
+    {
+      "text": "Tab4",
+      "image": "/img/slide4.jpg",
+      "secondaryImage": "/img/slide1.jpg",
+      "id": 4
     }
   ],
   "basket": [
     {
-      "type": "Product",
-      "title": "Ldl Product",
+      "text": "Tab1",
+      "image": "/img/slide1.jpg",
+      "secondaryImage": "/img/slide4.jpg",
       "id": 1
+    },
+    {
+      "text": "Tab2",
+      "image": "/img/slide2.jpg",
+      "secondaryImage": "/img/slide3.jpg",
+      "id": 2
+    },
+    {
+      "text": "Tab4",
+      "image": "/img/slide4.jpg",
+      "secondaryImage": "/img/slide1.jpg",
+      "id": 4
+    },
+    {
+      "text": "Tab3",
+      "image": "/img/slide3.jpg",
+      "secondaryImage": "/img/slide2.jpg",
+      "id": 3
     }
   ]
 }
